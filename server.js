@@ -10,12 +10,10 @@ app.get('/', (req, res) => {
 app.use(cors());
 
 // Include route files
-const adminRoute = require('./controllers/admin');
 const usersRoute = require('./controllers/users');
 const imagesRoute = require('./controllers/images');
 
 // Use routes
-app.use('/admin', adminRoute);
 app.use('/users', usersRoute);
 app.use('/images', imagesRoute);
 
